@@ -13,6 +13,7 @@ arquivo = "https://raw.githubusercontent.com/joseagnaldo26/feito_em_aula/main/em
 dfe = pd.read_csv(arquivo, sep=';') 
 st.dataframe(dfe.head(3)) 
 
+st.write("Gráfico de linhas dos indicadores ao longo do tempo")
 fig, ax = plt.subplots()
 dfe.plot()
 st.pyplot(fig)
