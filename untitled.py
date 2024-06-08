@@ -6,7 +6,7 @@ st.header("Dados da empresa 1")
 
 arquivo = "https://raw.githubusercontent.com/joseagnaldo26/feito_em_aula/main/empresa1.csv" 
 dfe = pd.read_csv(arquivo, sep=';') 
-st.dataframe(dfe) 
+st.dataframe(dfe.head(3)) 
 
 fig, ax = plt.subplots()
 dfe.plot()
