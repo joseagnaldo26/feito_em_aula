@@ -15,7 +15,7 @@ st.dataframe(dfe.head(3))
 
 st.write("Gráfico de linhas dos indicadores ao longo do tempo")
 fig, ax = plt.subplots()
-dfe.plot()
+dfe.plot(ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
