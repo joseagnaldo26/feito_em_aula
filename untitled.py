@@ -19,11 +19,11 @@ dfe.plot()
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-dfe.plot(kind = 'scatter', x = 'EBITDA', y = 'Lucro operacional')
+dfe.plot(kind = 'scatter', x = 'EBITDA', y = 'Lucro operacional', ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-dfe["Lucro do período"].plot(kind = 'hist')
+dfe["Lucro do período"].plot(kind = 'hist', ax=ax)
 st.pyplot(fig)
 
 st.write(dfe.groupby('Ano').mean())
