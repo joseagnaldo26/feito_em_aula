@@ -2,6 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
+st.set_page_config(
+
+page_title="Empresa 1",
+)
+
 st.header("Dados da empresa 1")
 
 arquivo = "https://raw.githubusercontent.com/joseagnaldo26/feito_em_aula/main/empresa1.csv" 
